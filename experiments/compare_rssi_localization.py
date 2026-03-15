@@ -773,14 +773,18 @@ def save_target_gain_plot(gain_df: pd.DataFrame, out_file: Path) -> None:
     if gain_df.empty:
         return
 
-    fig, axes = plt.subplots(1, 3, figsize=(13.0, 4.2))
+    fig, axes = plt.subplots(1, 3, figsize=(15.5, 5.6))
     metrics_cols = [
         ("mae_improvement_pct", "MAE Improvement"),
         ("rmse_improvement_pct", "RMSE Improvement"),
         ("p90_improvement_pct", "P90 Improvement"),
     ]
 
-    labels = [f"{r['scenario']}\\nvs {r['baseline_model']}" for _, r in gain_df.iterrows()]
+    scenario_alias = {"ideal_empty": "ideal", "complex_dynamic": "complex"}
+    labels = [
+        f"{scenario_alias.get(str(r['scenario']), str(r['scenario']))}-{str(r['baseline_model'])}"
+        for _, r in gain_df.iterrows()
+    ]
     x = np.arange(len(gain_df))
     colors = plt.cm.Set2(np.linspace(0, 1, len(gain_df)))
 
@@ -788,7 +792,7 @@ def save_target_gain_plot(gain_df: pd.DataFrame, out_file: Path) -> None:
         vals = gain_df[col].values
         bars = ax.bar(x, vals, color=colors)
         ax.set_xticks(x)
-        ax.set_xticklabels(labels, fontsize=8)
+        ax.set_xticklabels(labels, fontsize=8, rotation=25, ha="right")
         ax.set_ylabel("Improvement (%)")
         ax.set_title(title)
         ax.grid(alpha=0.25, linestyle="--")
@@ -797,7 +801,7 @@ def save_target_gain_plot(gain_df: pd.DataFrame, out_file: Path) -> None:
 
     target_model = str(gain_df["target_model"].iloc[0])
     fig.suptitle(f"Relative Gains of {target_model} Over Baselines")
-    fig.tight_layout()
+    fig.tight_layout(rect=[0, 0.10, 1, 0.95])
     fig.savefig(out_file, dpi=180)
     plt.close(fig)
 
