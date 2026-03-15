@@ -1,0 +1,12 @@
+{
+  "ideal_empty": {
+    "best_mae_model": "CNN",
+    "best_p90_model": "CNN",
+    "fastest_infer_model": "CNN"
+  },
+  "complex_dynamic": {
+    "best_mae_model": "CNN",
+    "best_p90_model": "CNN",
+    "fastest_infer_model": "CNN"
+  }
+}
