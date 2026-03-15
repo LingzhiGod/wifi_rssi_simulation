@@ -337,4 +337,6 @@ RSSI_{eff,a}(dBm)=RSSI_a(dBm)-10\log_{10}\left(1+\frac{I_a^{lin}}{P_{r,a}^{lin}}
 
 ## 13. 许可
 
-当前仓库尚未附带 License。若需对外发布，请补充许可证文件。
+本项目采用 **Apache License 2.0** 许可证。
+
+完整条款见 [LICENSE](LICENSE)。

@@ -347,4 +347,6 @@ Suggested extensions:
 
 ## 13. License
 
-No license file is currently included. Add one if distribution is needed.
+This project is licensed under the **Apache License 2.0**.
+
+See [LICENSE](LICENSE) for the full text.
