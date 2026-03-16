@@ -68,23 +68,23 @@
 ## 6. 插图与对比依据
 
 ### 6.1 精度柱状图（MAE / RMSE）
-![accuracy](figures/accuracy_bar.png)
+![accuracy](../experiments/results/figures/accuracy_bar.png)
 
 ### 6.2 定位误差CDF（简单场景）
-![cdf_ideal](figures/error_cdf_ideal_empty.png)
+![cdf_ideal](../experiments/results/figures/error_cdf_ideal_empty.png)
 
 ### 6.3 定位误差CDF（复杂场景）
-![cdf_complex](figures/error_cdf_complex_dynamic.png)
+![cdf_complex](../experiments/results/figures/error_cdf_complex_dynamic.png)
 
 ### 6.4 复杂场景预测散点对比
-![scatter](figures/complex_scatter.png)
+![scatter](../experiments/results/figures/complex_scatter.png)
 
 ### 6.5 RSSI场分布示意（AP1）
-![ideal](figures/ideal_rssi_heatmap.png)
-![complex](figures/complex_rssi_heatmap.png)
+![ideal](../experiments/results/figures/ideal_rssi_heatmap.png)
+![complex](../experiments/results/figures/complex_rssi_heatmap.png)
 
 ### 6.6 CNN相对提升图
-![cnn_gain](figures/cnn_gain.png)
+![cnn_gain](../experiments/results/figures/cnn_gain.png)
 
 ## 7. 结果解读
 
@@ -193,8 +193,8 @@
 
 ### 11.4 鲁棒性曲线图（分场景）
 
-![robust_ideal](robustness/figures/robustness_curve_ideal_empty.png)
-![robust_complex](robustness/figures/robustness_curve_complex_dynamic.png)
+![robust_ideal](../experiments/results/robustness/figures/robustness_curve_ideal_empty.png)
+![robust_complex](../experiments/results/robustness/figures/robustness_curve_complex_dynamic.png)
 
 ### 11.5 鲁棒性结论
 

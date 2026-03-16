@@ -1,0 +1,20 @@
+{
+  "noise_levels": [
+    0.0,
+    0.02,
+    0.05,
+    0.1,
+    0.2
+  ],
+  "scenarios": [
+    "ideal_empty",
+    "complex_dynamic"
+  ],
+  "files": {
+    "metrics": "/Users/trdyun/wifi_rssi_simulation/experiments/results/robustness/noise_robustness_metrics.csv",
+    "degradation": "/Users/trdyun/wifi_rssi_simulation/experiments/results/robustness/noise_robustness_degradation.csv",
+    "rank20": "/Users/trdyun/wifi_rssi_simulation/experiments/results/robustness/robustness_rank_at_20pct_noise.csv",
+    "fig_ideal": "/Users/trdyun/wifi_rssi_simulation/experiments/results/robustness/figures/robustness_curve_ideal_empty.png",
+    "fig_complex": "/Users/trdyun/wifi_rssi_simulation/experiments/results/robustness/figures/robustness_curve_complex_dynamic.png"
+  }
+}
